@@ -9,13 +9,13 @@ app.get('/',(req,res)=>{
     })
 })
 
-<<<<<<< HEAD
 app.get('/servicios',(req,res)=>{
     res.sendFile('./static/servicios.html',{
-=======
+        root: __dirname
+    })
+
 app.get('/contacto',(req,res)=>{
     res.sendFile('./static/contacto.html',{
->>>>>>> 2561d85d778068cfa26687a7aaa254d92b724f0e
         root: __dirname
     })
 })
