@@ -9,16 +9,11 @@ app.get('/',(req,res)=>{
     })
 })
 
-//app.get('/about',(req,res) => {
- //   res.sendFile('./templates/about.html', {
- //       root: __dirname
- //   })
-//})
-//app.get('/contact',(req,res) => {
-//    res.sendFile('./templates/contact.html', {
- //       root: __dirname
- //   })
-//})
+app.get('/contacto',(req,res)=>{
+    res.sendFile('./static/contacto.html',{
+        root: __dirname
+    })
+})
 
 app.use((req,res)=>{
     res.status(404).send('No se encontro tu pagina.....!!!!')
