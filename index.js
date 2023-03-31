@@ -21,6 +21,13 @@ app.get('/servicios',(req,res)=>{
     })
 })
 
+
+app.get('/clientes',(req,res)=>{
+    res.sendFile('./static/clientes.html',{
+        root: __dirname
+    })
+})
+
 app.get('/contacto',(req,res)=>{
     res.sendFile('./static/contacto.html',{
         root: __dirname
