@@ -9,10 +9,17 @@ app.get('/',(req,res)=>{
     })
 })
 
+app.get('/nosotros',(req,res)=>{
+    res.sendFile('./static/nosotros.html',{
+        root: __dirname
+    })
+})
+
 app.get('/servicios',(req,res)=>{
     res.sendFile('./static/servicios.html',{
         root: __dirname
     })
+})
 
 app.get('/contacto',(req,res)=>{
     res.sendFile('./static/contacto.html',{
